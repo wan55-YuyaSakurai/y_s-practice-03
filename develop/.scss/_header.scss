@@ -1,0 +1,60 @@
+.header {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  background: transparent;
+  z-index: 9;
+  &__inner {
+    width: 100%;
+    padding: 30px 60px;
+  }
+  .header__contents {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    .header__logo {
+      width: 260px;
+      > a {
+        width: 100%;
+        > img {
+          width: 100%;
+        }
+      }
+    }
+    .header__menu {
+      display: flex;
+      align-items: center;
+      &__btn {
+        position: relative;
+        width: 22px;
+        height: 2px;
+        border: none;
+        background: #fff;
+        &::before {
+          position: absolute;
+          content: "";
+          left: 0;
+          width: 100%;
+          height: 2px;
+          background: #fff;
+          transform: translateY(-8px);
+        }
+        &::after {
+          position: absolute;
+          content: "";
+          left: 0;
+          width: 100%;
+          height: 2px;
+          background: #fff;
+          transform: translateY(6px);
+        }
+      }
+      > h2 {
+        color: #fff;
+        @include font-size(10);
+        margin-left: 7px;
+      }
+    }
+  }
+}
