@@ -1,3 +1,4 @@
 import { hello } from "./test";
+import {nav} from "./nav";
 import "../.scss/style.scss";
-hello("成功");
+nav();

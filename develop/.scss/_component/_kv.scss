@@ -43,13 +43,13 @@
       @include font-size(20);
       color: $font-color-wt;
       font-weight: 400;
-      font-family: Montserrat;
+      font-family: $design-font;
     }
     > h2 {
       @include font-size(72);
       color: $font-color-wt;
       font-weight: 800;
-      font-family: Montserrat;
+      font-family: $design-font;
       line-height: 1.2;
     }
   }
